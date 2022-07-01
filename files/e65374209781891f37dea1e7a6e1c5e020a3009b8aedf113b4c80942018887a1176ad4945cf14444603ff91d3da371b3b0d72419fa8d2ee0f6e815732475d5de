@@ -34,7 +34,7 @@
   {
    "name": "animate",
    "children": [
-    {"name": "BigTest", "value": 9999},
+    {"name": "BigTest", "value": 17010},
     {"name": "Easing", "value": 17010},
     {"name": "FunctionSequence", "value": 5842},
     {
