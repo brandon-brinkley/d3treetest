@@ -34,8 +34,8 @@
   {
    "name": "animate",
    "children": [
-    {"name": "BigTest", "value": 17010},
-    {"name": "BigTest", "value": "http://www.microsoft.com"},
+    {"name": "BigTest1", "value": 17010},
+    {"name": "BigTest2", "value": '<a href="http://www.microsoft.com">X</a>'},
     {"name": "Easing", "value": 17010},
     {"name": "FunctionSequence", "value": 5842},
     {
