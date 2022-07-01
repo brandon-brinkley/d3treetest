@@ -82,6 +82,15 @@ function _chart(d3,data,dy,margin,width,dx,tree,diagonal)
         .attr("stroke-linejoin", "round")
         .attr("stroke-width", 3)
         .attr("stroke", "white");
+    
+    nodeEnter.append("svg:a")
+        .attr("xlink:href", function(d){return d.url;})  // <-- reading the new "url" property
+    .append("svg:rect")
+        .attr("y", -barHeight / 2)
+        .attr("height", barHeight)
+        .attr("width", barWidth)
+        .style("fill", color)
+        .on("click", click);  // <- remove this if you like
 
     // Transition nodes to their new position.
     const nodeUpdate = node.merge(nodeEnter).transition(transition)
